@@ -1,0 +1,14 @@
+<div class="event event-thumb">
+    <a class="event-img" href="#" onclick="return false;"><img src="<%= events.featured[index].images[0] %>" alt=""></a>
+    <div class="event-body">
+        <div class="event-org featured">
+            <a href="#" onclick="return false;"><%= events.featured[index].orgName %></a>
+        </div>
+        <h3 class="event-title title-lg"><a href="#" onclick="return false;"><%= events.featured[index].title %></a></h3>
+        <ul class="event-meta">
+            <li><a href="#" onclick="return false;"><%= events.featured[index].cityName %></a></li>
+            <li><%= moment(events.featured[index].start).format("ddd") %></li>
+            <li><%= moment(events.featured[index].start).format("DD/MM") %></li>
+        </ul>
+    </div>
+</div>

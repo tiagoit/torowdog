@@ -1,0 +1,42 @@
+<!-- events[0] = TODAY -->
+<% for (var day=0; day<60; day++) { %>
+    <!-- <div><%=day%> <%= events[day] %></div> -->
+    <% if (events[day] && events[day].length > 0) { %>
+        <div class="row mt-2 event-row">
+            <div class="col-md-12">
+                <div class="event-row-title">
+                    <h2>
+                        <% if (day === 0) { %>
+                            HOJE | 
+                        <% } else if (day === 1) { %>
+                            AMANHÃ | 
+                        <% } %>
+                        <%= moment(events[day][0]['start']).format("DD/MM").replace('/', '.') %>
+                        | <%= moment(events[day][0]['start']).format("dddd").replace('-feira', '') %>
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-3 event-row-list">
+            <% events[day].forEach(function(event, index) { %>
+                <div class=".col-12 .col-sm-6 .col-md-4 .col-lg-3 .col-xl-3 mb-3">
+                    <div class="event ml-2 mr-2">
+                        <a class="event-img" href="#" onclick="return false;"><img src="<%= event.images[0] %>" alt=""></a>
+                        <div class="event-body">
+                            <div class="event-org">
+                                <a href="#" onclick="return false;"><%= event.org %></a>
+                            </div>
+                            <h3 class="event-title"><a href="#" onclick="return false;"><%= event.title %></a></h3>
+                            <ul class="event-meta">
+                                <li><a href="#" onclick="return false;"><%= event.city %></a></li>
+                                <li><%= moment(event.start).format("DD/MM") %></li>
+                                <li><%= moment(event.start).format("dddd").replace('-feira', '') %></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    <% } %>
+<% } %>

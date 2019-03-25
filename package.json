@@ -1,0 +1,35 @@
+{
+  "name": "torowdog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "watch": "pm2 start src/app.js --watch && pm2 log",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gcloud app deploy --quiet",
+    "gae_logs": "gcloud app logs tail -s default"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/ferreirati/torowdog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/ferreirati/torowdog#readme",
+  "dependencies": {
+    "@google-cloud/storage": "^2.4.1",
+    "body-parser": "^1.18.3",
+    "config": "^3.0.1",
+    "cors": "^2.8.5",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-jwt": "^5.3.1",
+    "formidable": "^1.2.1",
+    "jsonwebtoken": "^8.4.0",
+    "moment": "^2.22.2",
+    "moment-timezone": "^0.5.23",
+    "mongoose": "^5.3.15",
+    "morgan": "^1.9.1"
+  }
+}

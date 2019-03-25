@@ -1,0 +1,7 @@
+{
+    "name": "Toro WatchDog - Production",
+    "bucketName": "torowdog",
+    "projectID": "torowdog",
+    "env": "production",
+    "jwtSecretToken": "8s7a9sd#$5DFVu$4&*ĤdDW$f#%3dfkjdkvi%Egf"
+}

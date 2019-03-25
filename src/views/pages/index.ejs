@@ -1,0 +1,67 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <% include ../partials/head %>
+</head>
+<body>
+
+<header id="header">
+    <% include ../partials/header %>
+</header>
+
+
+<!-- SECTION - DESTAQUE -->
+<!-- <% if (events.featured && events.featured.length > 0) { %>
+    <% include ./index_partial_featured.ejs %>
+<% } %> -->
+
+
+<!-- SECTION - MAIN ADVERTISE-->
+<!-- <div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 section-row text-center">
+                <a href="#" style="display: inline-block;margin: auto;">
+                    <img class="img-fluid" src="./img/ad-2.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- /SECTION -->
+
+
+<!-- SECTION - MAIN CONTAINER -->
+<div class="main-container">
+    <div class="row">
+        <!-- EVENTS -->
+        <div class="col-md-12">
+            <% include ./index_partial_events.ejs %>
+        </div>
+
+        <!-- WIDGETS -->
+        <!-- <div class="col-md-4"> -->
+            <%# include ./index_partial_side.ejs %>
+        <!-- </div> -->
+    </div>
+</div>
+<!-- /SECTION -->
+
+
+<footer id="footer">
+    <% include ../partials/footer %>
+</footer>
+
+<!-- SCRIPTS -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
