@@ -1,0 +1,9 @@
+<div class="section">
+    <div class="row justify-content-center">
+        <% for(var i=0; i < events.featured.length; i++) { %>
+            <div class=".col-12 .col-sm-12 .col-md-6 .col-lg-4 .col-xl-3 mx-3">
+                <%- include('../partials/event', {index: i}) %>
+            </div>
+        <% } %>
+    </div>
+</div>

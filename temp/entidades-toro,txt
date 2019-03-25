@@ -1,0 +1,7 @@
+// TORO RADAR
+
+// tipo_operacao
+{ "id": 1, "tipo": "DAY", "nome": "Day-Trade }
+{ "id": 1, "tipo": "DAY", "nome": "Day-Trade }
+
+tipo_ordem ['C'|'V']
