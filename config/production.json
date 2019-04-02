@@ -3,5 +3,14 @@
     "bucketName": "torowdog",
     "projectID": "torowdog",
     "env": "production",
-    "jwtSecretToken": "8s7a9sd#$5DFVu$4&*ĤdDW$f#%3dfkjdkvi%Egf"
+    "jwtSecretToken": "8s7a9sd#$5DFVu$4&*ĤdDW$f#%3dfkjdkvi%Egf",
+    "mongodb": {
+        "host": "mongodb://127.0.0.1:27017/torowdog",
+        "options": {
+            "useNewUrlParser": true,
+            "auth": { "authdb": "torowdog" },
+            "user": "torowdogdev",
+            "pass": "8ds7f9ds87f97ds9f898s09ad80f87sa0f8"
+        }
+    }
 }

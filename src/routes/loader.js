@@ -13,14 +13,14 @@ router.post('/', async (req, res) => {
         form.on('file', (field, file) => {
             _file = file;
         });
-
+ 
         form.on('end', async () => {
             let trades = JSON.parse(fs.readFileSync(_file.path));
             for(let i=0; i<trades.length; i++) {
                 const trade = buildTrade(trades[i]);
-                await trade.save();
+                Trade.updateOne({ "toroID": trade.toroID }, trade, {upsert: true}).exec();
             }
-            res.json(file);
+            res.json(_file);
         });
 
         form.parse(req);
@@ -34,7 +34,7 @@ function buildTrade(rawTradeObject) {
     let toroOperationTypes = {"DAY": "DT", "SWING": "ST"};
     let toroOrderTypes = {"C": "Buy", "V": "Sell"}
 
-    let e = new Trade();
+    let e = {};
     e.toroID        = rawTradeObject['id'];
     e.created       = rawTradeObject['criado'];
     e.edited        = rawTradeObject['editado'];
