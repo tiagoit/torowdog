@@ -23,15 +23,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + '/../public'));
 
-// Connect to MongoDB (hosted on GCE Instance)
-mongoose.connect('mongodb://35.231.67.98/torowdogdb', { 
-    useNewUrlParser: true,
-    auth: { authdb: "torowdogdb" },
-    user: "appenginetwd",
-    pass: "8ds7f9ds87f97ds9f898s09ad80f87sa0f8"
-}).then(() => console.log('Connected to MongoDB...'))
-.catch((err) => console.log('Cannot connect to MongoDB: ', err));
+console.log('APP NAME (CONFIG): ', config.get('name'));
 
+// Connect to MongoDB (hosted on GCE Instance)
+mongoose.connect(config.get('mongodb.host'), config.get('mongodb.options'))
+    .then(() => console.log('Connected to MongoDB...'))
+    .catch((err) => console.log('Cannot connect to MongoDB: ', err));
 
 // Auth 
 // app.use(expressJwt({secret: config.get('jwtSecretToken')}).unless({path: ['/api/auth', '', '/', '/about']}));

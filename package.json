@@ -5,9 +5,9 @@
   "main": "app.js",
   "scripts": {
     "start": "node ./src/app.js",
-    "watch": "pm2 start src/app.js --watch && pm2 log",
+    "start-local": "pm2 start src/app.js --watch && pm2 log",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gcloud app deploy --quiet",
+    "deploy": "gcloud app deploy --project torowdog --quiet",
     "gae_logs": "gcloud app logs tail -s default"
   },
   "repository": {
