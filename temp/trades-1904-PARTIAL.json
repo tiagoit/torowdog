@@ -1,6 +1,534 @@
 [
     {
         "empresa": {
+            "nome": "Cielo",
+            "codigo": "CIEL3",
+            "icone": "https://cdn.tororadar.com.br/analista/empresas/2018-8-1/43cccbc12636d194a25fa24fc92870de11ba88ae/CIEL.svg",
+            "mercado": "BOVESPA"
+        },
+        "tipo_operacao": {
+            "id": 1,
+            "tipo": "DAY",
+            "nome": "Day-Trade"
+        },
+        "id": 37333,
+        "tipo_ordem": "V",
+        "comentario": "",
+        "imagem": "https://cdn.tororadar.com.br/analista/misc/sem-imagem.jpg",
+        "compra": "8,92",
+        "compra_maxima": "8,90",
+        "stop": "9,01",
+        "objetivo": "8,83",
+        "preco_encerramento": "8,83",
+        "criado": "2019-04-03T15:09:20",
+        "editado": "2019-04-03T16:17:41"
+    },
+    {
+        "empresa": {
+            "nome": "Índice Futuro-Abr/19",
+            "codigo": "WINJ19",
+            "icone": "https://cdn.tororadar.com.br/analista/empresas/2019-2-12/29f154f6dcaa44a6c0ecdc95c69425b000bfc82c/WIN.svg",
+            "mercado": "BMF"
+        },
+        "tipo_operacao": {
+            "id": 1,
+            "tipo": "DAY",
+            "nome": "Day-Trade"
+        },
+        "id": 37334,
+        "tipo_ordem": "C",
+        "comentario": "",
+        "imagem": "https://cdn.tororadar.com.br/analista/misc/sem-imagem.jpg",
+        "compra": "95530",
+        "compra_maxima": "95560",
+        "stop": "95300",
+        "objetivo": "95780",
+        "preco_encerramento": "95430",
+        "criado": "2019-04-03T15:38:10",
+        "editado": "2019-04-03T15:56:46"
+    },
+    {
+        "empresa": {
+            "nome": "Dólar Futuro - Mai/19",
+            "codigo": "WDOK19",
+            "icone": "https://cdn.tororadar.com.br/analista/empresas/2019-3-29/52178fa8f8b7aef0b47d828594fa9f1e28313a2f/WDO.svg",
+            "mercado": "BMF"
+        },
+        "tipo_operacao": {
+            "id": 1,
+            "tipo": "DAY",
+            "nome": "Day-Trade"
+        },
+        "id": 37332,
+        "tipo_ordem": "C",
+        "comentario": "",
+        "imagem": "https://cdn.tororadar.com.br/analista/misc/sem-imagem.jpg",
+        "compra": "3858",
+        "compra_maxima": "3859",
+        "stop": "3850",
+        "objetivo": "3868",
+        "preco_encerramento": "3864",
+        "criado": "2019-04-03T13:26:23",
+        "editado": "2019-04-03T13:56:11"
+    },
+    {
+        "empresa": {
+            "nome": "GERDAU PN ",
+            "codigo": "GGBR4",
+            "icone": "https://cdn.tororadar.com.br/analista/empresas/2018-8-2/487bebd0abf8df39253ddce5f7e5e97c2d569e5c/GGBR.svg",
+            "mercado": "BOVESPA"
+        },
+        "tipo_operacao": {
+            "id": 1,
+            "tipo": "DAY",
+            "nome": "Day-Trade"
+        },
+        "id": 37327,
+        "tipo_ordem": "C",
+        "comentario": "",
+        "imagem": "https://cdn.tororadar.com.br/analista/misc/sem-imagem.jpg",
+        "compra": "16,34",
+        "compra_maxima": "16,36",
+        "stop": "16,19",
+        "objetivo": "16,52",
+        "preco_encerramento": "16,27",
+        "criado": "2019-04-03T10:37:33",
+        "editado": "2019-04-03T12:28:48"
+    },
+    {
+        "empresa": {
+            "nome": "Dólar Futuro - Mai/19",
+            "codigo": "WDOK19",
+            "icone": "https://cdn.tororadar.com.br/analista/empresas/2019-3-29/52178fa8f8b7aef0b47d828594fa9f1e28313a2f/WDO.svg",
+            "mercado": "BMF"
+        },
+        "tipo_operacao": {
+            "id": 1,
+            "tipo": "DAY",
+            "nome": "Day-Trade"
+        },
+        "id": 37330,
+        "tipo_ordem": "V",
+        "comentario": "",
+        "imagem": "https://cdn.tororadar.com.br/analista/misc/sem-imagem.jpg",
+        "compra": "3845",
+        "compra_maxima": "3844",
+        "stop": "3852",
+        "objetivo": "3837",
+        "preco_encerramento": "3852",
+        "criado": "2019-04-03T11:55:35",
+        "editado": "2019-04-03T12:06:09"
+    },
+    {
+        "empresa": {
+            "nome": "Índice Futuro-Abr/19",
+            "codigo": "WINJ19",
+            "icone": "https://cdn.tororadar.com.br/analista/empresas/2019-2-12/29f154f6dcaa44a6c0ecdc95c69425b000bfc82c/WIN.svg",
+            "mercado": "BMF"
+        },
+        "tipo_operacao": {
+            "id": 1,
+            "tipo": "DAY",
+            "nome": "Day-Trade"
+        },
+        "id": 37328,
+        "tipo_ordem": "C",
+        "comentario": "",
+        "imagem": "https://cdn.tororadar.com.br/analista/misc/sem-imagem.jpg",
+        "compra": "96070",
+        "compra_maxima": "96100",
+        "stop": "95900",
+        "objetivo": "96300",
+        "preco_encerramento": "96170",
+        "criado": "2019-04-03T11:01:52",
+        "editado": "2019-04-03T11:08:47"
+    },
+    {
+        "empresa": {
+            "nome": "Índice Futuro-Abr/19",
+            "codigo": "WINJ19",
+            "icone": "https://cdn.tororadar.com.br/analista/empresas/2019-2-12/29f154f6dcaa44a6c0ecdc95c69425b000bfc82c/WIN.svg",
+            "mercado": "BMF"
+        },
+        "tipo_operacao": {
+            "id": 1,
+            "tipo": "DAY",
+            "nome": "Day-Trade"
+        },
+        "id": 37326,
+        "tipo_ordem": "C",
+        "comentario": "",
+        "imagem": "https://cdn.tororadar.com.br/analista/misc/sem-imagem.jpg",
+        "compra": "96670",
+        "compra_maxima": "96700",
+        "stop": "96470",
+        "objetivo": "96970",
+        "preco_encerramento": "96530",
+        "criado": "2019-04-03T09:38:18",
+        "editado": "2019-04-03T09:53:12"
+    },
+    {
+        "empresa": {
+            "nome": "Vale",
+            "codigo": "VALE3",
+            "icone": "https://cdn.tororadar.com.br/analista/empresas/2018-8-2/eb8c792f190c5d4aa12248d998c7c656622e24fd/VALE.svg",
+            "mercado": "BOVESPA"
+        },
+        "tipo_operacao": {
+            "id": 1,
+            "tipo": "DAY",
+            "nome": "Day-Trade"
+        },
+        "id": 37321,
+        "tipo_ordem": "C",
+        "comentario": "",
+        "imagem": "https://cdn.tororadar.com.br/analista/misc/sem-imagem.jpg",
+        "compra": "52,07",
+        "compra_maxima": "52,09",
+        "stop": "51,62",
+        "objetivo": "52,55",
+        "preco_encerramento": "51,91",
+        "criado": "2019-04-02T14:46:01",
+        "editado": "2019-04-02T16:10:20"
+    },
+    {
+        "empresa": {
+            "nome": "Gol",
+            "codigo": "GOLL4",
+            "icone": "https://cdn.tororadar.com.br/analista/empresas/2018-8-2/46cbf2fb2cb7931685ef6df351a8344e79fc1fc1/GOLL.svg",
+            "mercado": "BOVESPA"
+        },
+        "tipo_operacao": {
+            "id": 1,
+            "tipo": "DAY",
+            "nome": "Day-Trade"
+        },
+        "id": 37323,
+        "tipo_ordem": "C",
+        "comentario": "",
+        "imagem": "https://cdn.tororadar.com.br/analista/misc/sem-imagem.jpg",
+        "compra": "25,24",
+        "compra_maxima": "25,26",
+        "stop": "24,98",
+        "objetivo": "25,60",
+        "preco_encerramento": "25,43",
+        "criado": "2019-04-02T15:22:30",
+        "editado": "2019-04-02T16:09:50"
+    },
+    {
+        "empresa": {
+            "nome": "Suzano",
+            "codigo": "SUZB3",
+            "icone": "https://cdn.tororadar.com.br/analista/empresas/2019-3-18/08ecc8530fdcc177c4b66e2d70946146be75f4b7/SUZB.svg",
+            "mercado": "BOVESPA"
+        },
+        "tipo_operacao": {
+            "id": 1,
+            "tipo": "DAY",
+            "nome": "Day-Trade"
+        },
+        "id": 37322,
+        "tipo_ordem": "V",
+        "comentario": "",
+        "imagem": "https://cdn.tororadar.com.br/analista/misc/sem-imagem.jpg",
+        "compra": "47,59",
+        "compra_maxima": "47,56",
+        "stop": "47,88",
+        "objetivo": "47,21",
+        "preco_encerramento": "47,80",
+        "criado": "2019-04-02T14:58:22",
+        "editado": "2019-04-02T15:46:58"
+    },
+    {
+        "empresa": {
+            "nome": "Índice Futuro-Abr/19",
+            "codigo": "WINJ19",
+            "icone": "https://cdn.tororadar.com.br/analista/empresas/2019-2-12/29f154f6dcaa44a6c0ecdc95c69425b000bfc82c/WIN.svg",
+            "mercado": "BMF"
+        },
+        "tipo_operacao": {
+            "id": 1,
+            "tipo": "DAY",
+            "nome": "Day-Trade"
+        },
+        "id": 37325,
+        "tipo_ordem": "C",
+        "comentario": "",
+        "imagem": "https://cdn.tororadar.com.br/analista/misc/sem-imagem.jpg",
+        "compra": "95580",
+        "compra_maxima": "95610",
+        "stop": "95410",
+        "objetivo": "95830",
+        "preco_encerramento": "95410",
+        "criado": "2019-04-02T15:30:05",
+        "editado": "2019-04-02T15:41:21"
+    },
+    {
+        "empresa": {
+            "nome": "Dólar Futuro - Mai/19",
+            "codigo": "WDOK19",
+            "icone": "https://cdn.tororadar.com.br/analista/empresas/2019-3-29/52178fa8f8b7aef0b47d828594fa9f1e28313a2f/WDO.svg",
+            "mercado": "BMF"
+        },
+        "tipo_operacao": {
+            "id": 1,
+            "tipo": "DAY",
+            "nome": "Day-Trade"
+        },
+        "id": 37324,
+        "tipo_ordem": "V",
+        "comentario": "",
+        "imagem": "https://cdn.tororadar.com.br/analista/misc/sem-imagem.jpg",
+        "compra": "3868,5",
+        "compra_maxima": "3867",
+        "stop": "3874",
+        "objetivo": "3860",
+        "preco_encerramento": "3863",
+        "criado": "2019-04-02T15:22:48",
+        "editado": "2019-04-02T15:29:55"
+    },
+    {
+        "empresa": {
+            "nome": "Dólar Futuro - Mai/19",
+            "codigo": "WDOK19",
+            "icone": "https://cdn.tororadar.com.br/analista/empresas/2019-3-29/52178fa8f8b7aef0b47d828594fa9f1e28313a2f/WDO.svg",
+            "mercado": "BMF"
+        },
+        "tipo_operacao": {
+            "id": 1,
+            "tipo": "DAY",
+            "nome": "Day-Trade"
+        },
+        "id": 37320,
+        "tipo_ordem": "V",
+        "comentario": "",
+        "imagem": "https://cdn.tororadar.com.br/analista/misc/sem-imagem.jpg",
+        "compra": "3867,5",
+        "compra_maxima": "3866,5",
+        "stop": "3874",
+        "objetivo": "3860",
+        "preco_encerramento": "3864,5",
+        "criado": "2019-04-02T14:08:29",
+        "editado": "2019-04-02T14:16:34"
+    },
+    {
+        "empresa": {
+            "nome": "Dólar Futuro - Mai/19",
+            "codigo": "WDOK19",
+            "icone": "https://cdn.tororadar.com.br/analista/empresas/2019-3-29/52178fa8f8b7aef0b47d828594fa9f1e28313a2f/WDO.svg",
+            "mercado": "BMF"
+        },
+        "tipo_operacao": {
+            "id": 1,
+            "tipo": "DAY",
+            "nome": "Day-Trade"
+        },
+        "id": 37319,
+        "tipo_ordem": "V",
+        "comentario": "",
+        "imagem": "https://cdn.tororadar.com.br/analista/misc/sem-imagem.jpg",
+        "compra": "3874",
+        "compra_maxima": "3873",
+        "stop": "3880",
+        "objetivo": "3867",
+        "preco_encerramento": "3870",
+        "criado": "2019-04-02T13:47:22",
+        "editado": "2019-04-02T13:59:30"
+    },
+    {
+        "empresa": {
+            "nome": "Índice Futuro-Abr/19",
+            "codigo": "WINJ19",
+            "icone": "https://cdn.tororadar.com.br/analista/empresas/2019-2-12/29f154f6dcaa44a6c0ecdc95c69425b000bfc82c/WIN.svg",
+            "mercado": "BMF"
+        },
+        "tipo_operacao": {
+            "id": 1,
+            "tipo": "DAY",
+            "nome": "Day-Trade"
+        },
+        "id": 37318,
+        "tipo_ordem": "V",
+        "comentario": "",
+        "imagem": "https://cdn.tororadar.com.br/analista/misc/sem-imagem.jpg",
+        "compra": "95300",
+        "compra_maxima": "95270",
+        "stop": "95550",
+        "objetivo": "95000",
+        "preco_encerramento": "95000",
+        "criado": "2019-04-02T13:21:13",
+        "editado": "2019-04-02T13:26:17"
+    },
+    {
+        "empresa": {
+            "nome": "Índice Futuro-Abr/19",
+            "codigo": "WINJ19",
+            "icone": "https://cdn.tororadar.com.br/analista/empresas/2019-2-12/29f154f6dcaa44a6c0ecdc95c69425b000bfc82c/WIN.svg",
+            "mercado": "BMF"
+        },
+        "tipo_operacao": {
+            "id": 1,
+            "tipo": "DAY",
+            "nome": "Day-Trade"
+        },
+        "id": 37317,
+        "tipo_ordem": "V",
+        "comentario": "",
+        "imagem": "https://cdn.tororadar.com.br/analista/misc/sem-imagem.jpg",
+        "compra": "95650",
+        "compra_maxima": "95620",
+        "stop": "95860",
+        "objetivo": "95370",
+        "preco_encerramento": "95450",
+        "criado": "2019-04-02T12:53:53",
+        "editado": "2019-04-02T13:00:43"
+    },
+    {
+        "empresa": {
+            "nome": "Cemig",
+            "codigo": "CMIG4",
+            "icone": "https://cdn.tororadar.com.br/analista/empresas/2018-8-1/5d03682a734b552776954f0db31bf4ed54fcdce8/CMIG.svg",
+            "mercado": "BOVESPA"
+        },
+        "tipo_operacao": {
+            "id": 1,
+            "tipo": "DAY",
+            "nome": "Day-Trade"
+        },
+        "id": 37316,
+        "tipo_ordem": "V",
+        "comentario": "",
+        "imagem": "https://cdn.tororadar.com.br/analista/misc/sem-imagem.jpg",
+        "compra": "13,76",
+        "compra_maxima": "13,74",
+        "stop": "13,86",
+        "objetivo": "13,62",
+        "preco_encerramento": "13,80",
+        "criado": "2019-04-02T11:56:51",
+        "editado": "2019-04-02T12:57:02"
+    },
+    {
+        "empresa": {
+            "nome": "Dólar Futuro - Mai/19",
+            "codigo": "WDOK19",
+            "icone": "https://cdn.tororadar.com.br/analista/empresas/2019-3-29/52178fa8f8b7aef0b47d828594fa9f1e28313a2f/WDO.svg",
+            "mercado": "BMF"
+        },
+        "tipo_operacao": {
+            "id": 1,
+            "tipo": "DAY",
+            "nome": "Day-Trade"
+        },
+        "id": 37313,
+        "tipo_ordem": "C",
+        "comentario": "",
+        "imagem": "https://cdn.tororadar.com.br/analista/misc/sem-imagem.jpg",
+        "compra": "3875",
+        "compra_maxima": "3876",
+        "stop": "3868",
+        "objetivo": "3883",
+        "preco_encerramento": "3883",
+        "criado": "2019-04-02T10:54:59",
+        "editado": "2019-04-02T11:40:10"
+    },
+    {
+        "empresa": {
+            "nome": "Vale",
+            "codigo": "VALE3",
+            "icone": "https://cdn.tororadar.com.br/analista/empresas/2018-8-2/eb8c792f190c5d4aa12248d998c7c656622e24fd/VALE.svg",
+            "mercado": "BOVESPA"
+        },
+        "tipo_operacao": {
+            "id": 1,
+            "tipo": "DAY",
+            "nome": "Day-Trade"
+        },
+        "id": 37309,
+        "tipo_ordem": "C",
+        "comentario": "",
+        "imagem": "https://cdn.tororadar.com.br/analista/misc/sem-imagem.jpg",
+        "compra": "53,10",
+        "compra_maxima": "53,16",
+        "stop": "52,61",
+        "objetivo": "53,72",
+        "preco_encerramento": "52,78",
+        "criado": "2019-04-02T10:07:27",
+        "editado": "2019-04-02T11:04:31"
+    },
+    {
+        "empresa": {
+            "nome": "LOJAS RENNER ON",
+            "codigo": "LREN3",
+            "icone": "https://cdn.tororadar.com.br/analista/empresas/2018-8-2/147806f306b68dd964ba3ee1de9445e1a8194541/LREN.svg",
+            "mercado": "BOVESPA"
+        },
+        "tipo_operacao": {
+            "id": 1,
+            "tipo": "DAY",
+            "nome": "Day-Trade"
+        },
+        "id": 37311,
+        "tipo_ordem": "V",
+        "comentario": "",
+        "imagem": "https://cdn.tororadar.com.br/analista/misc/sem-imagem.jpg",
+        "compra": "43,73",
+        "compra_maxima": "43,71",
+        "stop": "43,99",
+        "objetivo": "43,43",
+        "preco_encerramento": "43,45",
+        "criado": "2019-04-02T10:23:19",
+        "editado": "2019-04-02T11:04:19"
+    },
+    {
+        "empresa": {
+            "nome": "Índice Futuro-Abr/19",
+            "codigo": "WINJ19",
+            "icone": "https://cdn.tororadar.com.br/analista/empresas/2019-2-12/29f154f6dcaa44a6c0ecdc95c69425b000bfc82c/WIN.svg",
+            "mercado": "BMF"
+        },
+        "tipo_operacao": {
+            "id": 1,
+            "tipo": "DAY",
+            "nome": "Day-Trade"
+        },
+        "id": 37308,
+        "tipo_ordem": "C",
+        "comentario": "",
+        "imagem": "https://cdn.tororadar.com.br/analista/misc/sem-imagem.jpg",
+        "compra": "96610",
+        "compra_maxima": "96640",
+        "stop": "96410",
+        "objetivo": "96950",
+        "preco_encerramento": "96710",
+        "criado": "2019-04-02T09:53:45",
+        "editado": "2019-04-02T10:04:52"
+    },
+    {
+        "empresa": {
+            "nome": "Dólar Futuro - Mai/19",
+            "codigo": "WDOK19",
+            "icone": "https://cdn.tororadar.com.br/analista/empresas/2019-3-29/52178fa8f8b7aef0b47d828594fa9f1e28313a2f/WDO.svg",
+            "mercado": "BMF"
+        },
+        "tipo_operacao": {
+            "id": 1,
+            "tipo": "DAY",
+            "nome": "Day-Trade"
+        },
+        "id": 37307,
+        "tipo_ordem": "V",
+        "comentario": "",
+        "imagem": "https://cdn.tororadar.com.br/analista/misc/sem-imagem.jpg",
+        "compra": "3868,5",
+        "compra_maxima": "3867,5",
+        "stop": "3875",
+        "objetivo": "3860",
+        "preco_encerramento": "3873",
+        "criado": "2019-04-02T09:25:30",
+        "editado": "2019-04-02T09:32:35"
+    },
+    {
+        "empresa": {
             "nome": "Banco do Brasil",
             "codigo": "BBAS3",
             "icone": "https://cdn.tororadar.com.br/analista/empresas/2018-8-1/94f38f0428e205734941b5dfab6d68e8c65d237e/BBAS.svg",
@@ -11,7 +539,7 @@
             "tipo": "DAY",
             "nome": "Day-Trade"
         },
-        "id": 37312,
+        "id": 37305,
         "tipo_ordem": "V",
         "comentario": "",
         "imagem": "https://cdn.tororadar.com.br/analista/misc/sem-imagem.jpg",

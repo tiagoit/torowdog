@@ -4,7 +4,7 @@
   "scripts": {
     "start": "ng serve --watch --open",
     "build": "ng build --prod", 
-    "deploy": "npm run build && firebase deploy"
+    "deploy": "npm run build && firebase deploy --project torowdog"
   },
   "private": true,
   "dependencies": {
