@@ -48,8 +48,8 @@ export function tokenGetter() {
     JwtModule.forRoot({
       config: {
         tokenGetter: tokenGetter,
-        whitelistedDomains: ['localhost:4200', 'localhost:8080', 'sulbaguia.com.br', ''],
-        blacklistedRoutes: ['localhost:4200/api/auth', 'localhost:8080/api/auth', 'sulbaguia.com.br/api/auth']
+        whitelistedDomains: ['localhost:4200', 'localhost:8080', 'torowdog.appspot.com', ''],
+        blacklistedRoutes: ['localhost:4200/api/auth', 'localhost:8080/api/auth', 'torowdog.appspot.com/api/auth']
       }
     })
   ],
