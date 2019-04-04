@@ -16,8 +16,8 @@ export class TradeService {
     return this.http.get(this.url);
   }
   
-  getById(id) {
-    return this.http.get(`${this.url}/${id}`);
+  getByCode(code): Observable<Object> {
+    return this.http.get(`${this.url}/${code}`);
   }
   
   update(data) {
