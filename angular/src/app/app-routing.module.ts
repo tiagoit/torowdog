@@ -7,10 +7,12 @@ import { AuthGuard } from './auth/auth.guard';
 
 import { LoadComponent } from "./loader/load/load.component";
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { TradesComponent } from './trades/trades.component';
 
 
 const routes: Routes = [
   { path: '', component: DashboardComponent},
+  { path: 'trades/:code', component: TradesComponent},
   { path: 'login', component: LoginComponent},
   { path: 'loader', component: LoadComponent, canActivate: [AuthGuard] },
 ];

@@ -5,6 +5,7 @@
       <th>qtt</th>
       <th>hit</th>
       <th>% hit</th>
+      <th>avgGain</th>
       <th>qttBuy</th>
       <th>hitBuy</th>
       <th>% hitBuy</th>
@@ -15,16 +16,20 @@
   </thead>
   <tbody>
     <tr *ngFor="let trade of orderedArray">
-      <td>{{ trade.code }}</td>
+      <td><a routerLink="/trades/{{trade.code}}">{{ trade.code }}</a></td>
       <td>{{ trade.qtt }}</td>
       <td>{{ trade.hit }}</td>
-      <td [ngClass]="{'wow': trade.hit*100/trade.qtt > 50}">{{ trade.hit * 100 / trade.qtt | number:'2.0-0' }}</td>
+      <td [ngClass]="{'wow': trade.hit*100/trade.qtt > 60, 'poutz': trade.hit*100/trade.qtt < 15}">
+        {{ trade.hit * 100 / trade.qtt | number:'2.0-0' }}%</td>
+      <td>{{ trade.avgGain | number:'1.2-2'}}%</td>
       <td>{{ trade.qttBuy }}</td>
       <td>{{ trade.hitBuy }}</td>
-      <td [ngClass]="{'wow': trade.hitBuy*100/trade.qttBuy > 50}">{{ trade.hitBuy * 100 / trade.qttBuy | number:'2.0-0' }}</td>
+      <td [ngClass]="{'wow': trade.hitBuy*100/trade.qttBuy > 60, 'poutz': trade.hitBuy*100/trade.qttBuy < 15}">
+        {{ trade.hitBuy * 100 / trade.qttBuy | number:'2.0-0' }}%</td>
       <td>{{ trade.qttSell }}</td>
       <td>{{ trade.hitSell }}</td>
-      <td [ngClass]="{'wow': trade.hitSell*100/trade.qttSell > 50}">{{ trade.hitSell * 100 / trade.qttSell | number:'2.0-0' }}</td>
+      <td [ngClass]="{'wow': trade.hitSell*100/trade.qttSell > 60, 'poutz': trade.hitSell*100/trade.qttSell < 15}">
+        {{ trade.hitSell * 100 / trade.qttSell | number:'2.0-0' }}%</td>
     </tr>
   </tbody>
 </table>

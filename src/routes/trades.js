@@ -14,7 +14,17 @@ router.get('/', async (req, res) => {
     }
 });
 
-// ############   Get trades by Name
+// ############   Get trades by code
+router.get('/:code', async (req, res) => {
+    try {
+        console.log('endpoint: /trades/:code - GET: ',  req.params.code)
+        const trades = await Trade.find({code: req.params.code});
+        console.log('trades:', trades);
+        res.send(trades);
+    } catch (error) {
+        return res.status(400).send(error);
+    }
+});
 
 
 
