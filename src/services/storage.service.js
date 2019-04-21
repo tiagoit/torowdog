@@ -7,30 +7,8 @@ const bucketName = config.get('bucketName');
 // Creates a client
 const storage = new Storage({
   projectID: projectID,
-  keyFilename: 'service-account-87s9f79a7fd96fs9ds7f.json'
+  keyFilename: 'torowdog-90d80c4a8bd6.json'
 });
-
-// Creates the new bucket
-function createBucket(newBucketName) {
-    storage.createBucket(newBucketName).then(() => {
-        console.log(`Bucket ${newBucketName} created.`);
-    }).catch(err => {
-        console.error('ERROR:', err);
-    });
-}
-
-function listBuckets() {
-    storage.getBuckets().then((results) => {
-        const buckets = results[0];
-  
-        console.log('Buckets:');
-        buckets.forEach((bucket) => {
-            console.log(bucket.name);
-        });
-    }).catch((err) => {
-        console.error('ERROR:', err);
-    }); 
-}
 
 async function uploadFile(srcFilename, destFilename) {
     // Uploads a local file to the bucket
@@ -63,19 +41,5 @@ async function deleteFile(fileUrl) {
     console.log(`gs://${bucketName}/${filename} deleted.`);
 }
 
-// Makes the file public
-async function makePublic(filename) {
-    let result = await storage
-        .bucket(bucketName)
-        .file(filename)
-        .makePublic();
-
-    console.log(`gs://${bucketName}/${filename} is now public.`);
-    console.log('Make public result: ', result);
-}
-
-// module.exports.createBucket = createBucket;
-// module.exports.listBuckets = listBuckets;
-// module.exports.makePublic = makePublic;
 module.exports.uploadFile = uploadFile;
 module.exports.deleteFile = deleteFile;

@@ -1,0 +1,64 @@
+{
+  "wallets": [
+    {
+      "group": "rico",
+      "period": "week",
+      "month": 4,
+      "week": 1,
+      "stocks": [
+        { "code": "ABEV3", "weight": 20 },
+        { "code": "SAPR4", "weight": 20 },
+        { "code": "BBAS3", "weight": 20 },
+        { "code": "ECOR3", "weight": 20 },
+        { "code": "CSNA3", "weight": 20 }
+      ]
+    }
+  ],
+  "stocks": [{
+		"code": "BBAS3"
+	}]
+}
+
+{
+  "empresa": {
+    "id": 143,
+    "analista": 49,
+    "nome": "Cielo",
+    "codigo": "CIEL3",
+    "icone": "https://cdn.tororadar.com.br/analista/empresas/2018-8-1/43cccbc12636d194a25fa24fc92870de11ba88ae/CIEL.svg",
+    "sobre": "A Cielo surgiu em 1995 quando uma série de grandes bancos e a Visa Internacional se uniram para criar a Companhia Brasileira de Meio de Pagamentos que veio a se transformar na Cielo ao final de 2009. A proposta da companhia era centralizar a rede de relacionamento com afiliados em todo o Brasil reduzindo custos e otimizando a margem. Atualmente, a companhia opera as bandeiras Visa, Mastercard, American Express, Diners Club International, JCB (Japan Credit Bureau), Elo e outras bandeiras de menor circulação. A empresa tem presença internacional e participação em diversas empresas que atuam na cadeia de processamento de pagamentos.",
+    "pontos_positivos": "O aumento no volume de transações acompanha os sinais de recuperação da economia.\r\nPosição de liderança na indústria nacional, o que potencializa a manutenção de margem elevada para a Companhia.\r\nMantém grande sinergia com alguns de seus principais acionistas, notadamente o Banco do Brasil e o Bradesco.\r\nGrande capilaridade através da rede de afiliados e do cartão Cielo.\r\nCriação de nova linha “Stelo” com a nova política de preços para competir diretamente com novos concorrentes e crescimento na vendas de máquinas.",
+    "pontos_negativos": "Últimos resultados apontam estabilização do crescimento da Companhia.\r\nApesar do crescimento das vendas, os clientes ativos ainda diminuem.\r\nMercado comoditizado, retirando foco na qualidade do serviço prestado para competição em preços.\r\nNova política de preços e necessidades de intensificação nas ações de marketing reduzem as margens da Companhia.\r\nAs recentes reduções nas taxas de juros prejudicam as receitas de antecipação de recebíveis, uma vez que são proporcionais à taxa básica de juros.\r\nAumento da concorrência mesmo diante de um mercado com características que favorecem a formação de oligopólios.\r\nAumento no volume do débito e pagamento à vista devido a lei de “Pagamento Diferenciado”.",
+    "resumo": "A competitividade do mercado de atuação da Cielo (CIEL3) continuou sendo um desafio enfrentado pela Companhia no quarto trimestre de 2018. A melhora nos indicadores do ICVA (Índice Cielo do Varejo Ampliado) demonstra um aumento real na atividade dos varejistas com crescimento de 2,5% no ano. O mercado de meios de pagamento tem enfrentado uma comoditização do produto, onde não há tanta diferenciação do produto vendido pelos competidores. Com isso, a Cielo ao longo dos últimos trimestres optou por competir através de preços, comprometendo seus resultados e suas margens.\r\n \r\nA diminuição da sua receita líquida, assim como o lucro líquido que apresentou uma queda 30,6% na comparação com o quarto trimestre do ano passado, vem sendo causada pela diminuição dos preços praticados e pela perda de participação de mercado, além de investimentos em marketing e ações comerciais que a Companhia vem realizando ao longo dos últimos trimestres. Prova disso foi no último trimestre, no qual a Cielo credenciou duas vezes mais vendedores, 500 terceirizados para atuação no segmento de microempreendedores e começou a atuar na venda de máquinas com a marca Stelo. Como consequência, as despesas operacionais aumentaram 42% na comparação com o mesmo trimestre do ano passado.\r\n \r\nCom um cenário desafiador, a Cielo optou por trocar margem por investimentos em marketing e ações de vendas, o que eleva suas despesas operacionais. Com isso, acreditamos que a Companhia possui resiliência e participação importante no mercado para suportar um ano que será crucial para mostrar sua força competitiva. Com um ROE (Lucro Líquido/Patrimônio Líquido) encerrando 2018 com 29,8%, ROIC (Lucro operacional EBIT/Patrimônio líquido mais Total de Empréstimos e Financiamentos) de 12,6% e margem EBITDA de 36,3% no acumulado do ano de 2018, a Companhia demonstra que ainda possui margem para queimar ao longo de 2019. Mantemos uma tendência neutra de longo prazo para o papel, aguardando para ver se a estratégia comercial vai gerar algum efeito nos próximos resultados da Companhia.\r\n \r\nANÁLISE DE RESULTADO 4º TRIMESTRE 2018\r\n \r\nA receita operacional líquida da Cielo totalizou R$3,01 bilhões no 4T18, queda de 0,8% quando comparada com o resultado do mesmo período do ano anterior. Vale lembrar que, em face da mudança do modelo de remuneração de bandeira nacional, que elimina o adicional de intercâmbio pago aos bancos emissores, a Companhia passará a ajustar o yield na intenção de assegurar a comparatividade nos períodos. Esse resultado foi amparado pela Cielo Brasil, que demonstrou queda em sua receita líquida de 8,1% frente ao 4T17. O resultado operacional, medido pelo Ebitda, foi de R$1,09 bilhão, queda de 20,8% na comparação anual, com margem de 36,3%, representando uma redução de 9,1 p.p. frente ao 4T17.\r\nO lucro líquido ajustado atingiu R$724,1 milhões no trimestre, queda de 30,6% na comparação anual, refletindo a elevação das despesas operacionais que totalizaram R$511,4 milhões, variação de 42,0%. Esse aumento foi justificado pela elevação das despesas com pessoal, despesas de vendas e marketing associados ao lançamento de novos produtos e ações comerciais, além do acréscimo nas outras despesas operacionais líquidas, devido ao aumento com provisão de perda de equipamentos de captura e baixa de créditos incobráveis.\r\n \r\nO custo dos serviços prestados totalizou R$1,4 bilhão no 4T18, aumento de 8,5% quando comparado ao mesmo trimestre do ano anterior. Essa retração se deu fundamentalmente pela controlada Cateno, que sofreu o aumento nos custos vinculados à gestão de contas de pagamento do Arranjo Ourocard, em virtude de um crescimento orgânico do negócio em 2018.\r\n \r\nO resultado financeiro atingiu R$241,4 milhões, redução de 44,9% comparado ao mesmo trimestre do ano anterior. Esse resultado foi impactado por dois fatores referentes à Cielo Brasil. O primeiro foi o decréscimo de receitas relacionadas à redução no saldo médio de caixa aplicado, devido à alteração na política de pagamentos de dividendos, que passou a ser trimestral em 2018. Também contou para o primeiro fator a redução nas despesas financeiras, que foi relacionada ao menor endividamento médio com terceiros, em virtude da amortização das debêntures públicas e liquidação antecipada do FINAME. Já o segundo fator foi referente à queda na aquisição de recebíveis líquidos realizada pelos FIDCs (Fundos de Investimento em Direitos Creditórios), que reduziram-se em 40,3% em relação ao 4T17, por conta da redução de volume adquirido, em reflexo do aumento da concentração em clientes do segmento de grandes contas no atual trimestre.",
+    "valor_total": "29.586,11",
+    "receita_liquida": "11.685,84",
+    "numero_acoes": "2.716,81",
+    "pl": "5,47",
+    "resultado": "3.559,43",
+    "dividendos": "1,42",
+    "beta": "0,57",
+    "busca_cotacao": true,
+    "ativa": true,
+    "criado": "2014-07-14T16:41:51",
+    "editado": "2019-01-29T18:10:02",
+    "mercado": "BOVESPA"
+  },
+  "tipo_operacao": {
+      "id": 1,
+      "tipo": "DAY",
+      "nome": "Day-Trade"
+  },
+  "id": 37489,
+  "analista": 43,
+  "tipo_recomendacao": "ENC",
+  "tipo_ordem": "C",
+  "comentario": "",
+  "imagem": "https://cdn.tororadar.com.br/analista/misc/sem-imagem.jpg",
+  "compra": "8,33",
+  "compra_maxima": "8,34",
+  "stop": "8,24",
+  "objetivo": "8,47",
+  "preco_encerramento": "8,33",
+  "criado": "2019-04-18T15:48:24",
+  "editado": "2019-04-18T16:22:25"
+}
