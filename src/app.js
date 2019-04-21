@@ -1,10 +1,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
-const path = require('path');
 const cors = require('cors');
 const mongoose = require('mongoose'); 
-const expressJwt = require('express-jwt');
 const config = require('config');
 
 const moment = require('moment-timezone');
@@ -15,13 +13,10 @@ const app = express();
 const DEBUG = process.env.NODE_ENV !== 'production';
 const PORT = DEBUG ? '8080' : process.env.PORT;
 
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, './views'));
 app.use(cors());
 app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static(__dirname + '/../public'));
 
 console.log('APP NAME (CONFIG): ', config.get('name'));
 

@@ -1,6 +1,6 @@
 { 
     "name": "Toro WatchDog",
-    "bucketName": "torowdog",
+    "bucketName": "torowdog-public-read",
     "projectID": "torowdog",
     "env": "local",
     "jwtSecretToken": "#$3FDFDGF$%777rgfgf$$#$2235677fgfhHGJg",
