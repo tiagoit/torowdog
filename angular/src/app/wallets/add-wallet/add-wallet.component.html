@@ -1,0 +1,139 @@
+<form class="form-container" [formGroup]="fg"> 
+
+  <h2>Cadastrar Carteira</h2>
+
+  <mat-form-field>
+    <mat-select #firstInput required formControlName="group" tabindex="1">
+      <mat-option *ngFor="let group of service.getGroups()" [value]="group">{{group}}</mat-option>
+    </mat-select>
+    <mat-label>Grupo</mat-label>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-select required formControlName="frequency" tabindex="2">
+      <mat-option *ngFor="let frequency of service.getFrequencies()" [value]="frequency">{{frequency}}</mat-option>
+    </mat-select>
+    <mat-label>Frequência</mat-label>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput formControlName="type" placeholder="Tipo" required  tabindex="3">
+  </mat-form-field>
+
+
+  <div class="row">
+    <mat-form-field class="col-6 pl-0">
+      <input matInput formControlName="start" [matDatepicker]="startPicker" placeholder="Start" (focus)="startPicker.open()" required>
+      <mat-datepicker-toggle matSuffix [for]="startPicker" tabindex="4"></mat-datepicker-toggle>
+      <mat-datepicker #startPicker touchUi></mat-datepicker>
+    </mat-form-field>
+    
+    <mat-form-field class="col-6 pr-0">
+      <input matInput formControlName="end" [matDatepicker]="endPicker" placeholder="End" (focus)="endPicker.open()" required>
+      <mat-datepicker-toggle matSuffix [for]="endPicker" tabindex="5"></mat-datepicker-toggle>
+      <mat-datepicker #endPicker touchUi></mat-datepicker>
+    </mat-form-field>
+  </div>
+</form>
+
+
+  <h3>Ações</h3>
+  <div class="stocks">
+    <div>
+      <span>1</span>
+      <mat-form-field><input [(ngModel)]="stock_0_code" matInput placeholder="Código" tabindex="6"></mat-form-field>
+      <mat-form-field><input [(ngModel)]="stock_0_weight" matInput placeholder="Peso" tabindex="7"></mat-form-field>
+    </div>
+
+    <div>
+      <span>2</span>
+      <mat-form-field><input [(ngModel)]="stock_1_code" matInput placeholder="Código" tabindex="8"></mat-form-field>
+      <mat-form-field><input [(ngModel)]="stock_1_weight" matInput placeholder="Peso" tabindex="9"></mat-form-field>
+    </div>
+    
+    <div>
+      <span>3</span>
+      <mat-form-field><input [(ngModel)]="stock_2_code" matInput placeholder="Código" tabindex="10"></mat-form-field>
+      <mat-form-field><input [(ngModel)]="stock_2_weight" matInput placeholder="Peso" tabindex="11"></mat-form-field>
+    </div>
+
+    <div>
+      <span>4</span>
+      <mat-form-field><input [(ngModel)]="stock_3_code" matInput placeholder="Código" tabindex="12"></mat-form-field>
+      <mat-form-field><input [(ngModel)]="stock_3_weight" matInput placeholder="Peso" tabindex="13"></mat-form-field>
+    </div>
+
+    <div>
+      <span>5</span>
+      <mat-form-field><input [(ngModel)]="stock_4_code" matInput placeholder="Código" tabindex="14"></mat-form-field>
+      <mat-form-field><input [(ngModel)]="stock_4_weight" matInput placeholder="Peso" tabindex="15"></mat-form-field>
+    </div>
+
+    <div>
+      <span>6</span>
+      <mat-form-field><input [(ngModel)]="stock_5_code" matInput placeholder="Código" tabindex="16"></mat-form-field>
+      <mat-form-field><input [(ngModel)]="stock_5_weight" matInput placeholder="Peso" tabindex="17"></mat-form-field>
+    </div>
+
+    <div>
+      <span>7</span>
+      <mat-form-field><input [(ngModel)]="stock_6_code" matInput placeholder="Código" tabindex="18"></mat-form-field>
+      <mat-form-field><input [(ngModel)]="stock_6_weight" matInput placeholder="Peso" tabindex="19"></mat-form-field>
+    </div>
+
+    <div>
+      <span>8</span>
+      <mat-form-field><input [(ngModel)]="stock_7_code" matInput placeholder="Código" tabindex="20"></mat-form-field>
+      <mat-form-field><input [(ngModel)]="stock_7_weight" matInput placeholder="Peso" tabindex="21"></mat-form-field>
+    </div>
+    
+    <div>
+      <span>9</span>
+      <mat-form-field><input [(ngModel)]="stock_8_code" matInput placeholder="Código" tabindex="22"></mat-form-field>
+      <mat-form-field><input [(ngModel)]="stock_8_weight" matInput placeholder="Peso" tabindex="23"></mat-form-field>
+    </div>
+
+    <div>
+      <span>10</span>
+      <mat-form-field><input [(ngModel)]="stock_9_code" matInput placeholder="Código" tabindex="24"></mat-form-field>
+      <mat-form-field><input [(ngModel)]="stock_9_weight" matInput placeholder="Peso" tabindex="25"></mat-form-field>
+    </div>
+
+    <div>
+      <span>11</span>
+      <mat-form-field><input [(ngModel)]="stock_10_code" matInput placeholder="Código" tabindex="26"></mat-form-field>
+      <mat-form-field><input [(ngModel)]="stock_10_weight" matInput placeholder="Peso" tabindex="27"></mat-form-field>
+    </div>
+
+    <div>
+      <span>12</span>
+      <mat-form-field><input [(ngModel)]="stock_11_code" matInput placeholder="Código" tabindex="28"></mat-form-field>
+      <mat-form-field><input [(ngModel)]="stock_11_weight" matInput placeholder="Peso" tabindex="29"></mat-form-field>
+    </div>
+
+    <div>
+      <span>13</span>
+      <mat-form-field><input [(ngModel)]="stock_12_code" matInput placeholder="Código" tabindex="30"></mat-form-field>
+      <mat-form-field><input [(ngModel)]="stock_12_weight" matInput placeholder="Peso" tabindex="31"></mat-form-field>
+    </div>
+    
+    <div>
+      <span>14</span>
+      <mat-form-field><input [(ngModel)]="stock_13_code" matInput placeholder="Código" tabindex="32"></mat-form-field>
+      <mat-form-field><input [(ngModel)]="stock_13_weight" matInput placeholder="Peso" tabindex="33"></mat-form-field>
+    </div>
+
+    <div>
+      <span>15</span>
+      <mat-form-field><input [(ngModel)]="stock_14_code" matInput placeholder="Código" tabindex="34"></mat-form-field>
+      <mat-form-field><input [(ngModel)]="stock_14_weight" matInput placeholder="Peso" tabindex="35"></mat-form-field>
+    </div>
+    <div>
+      <span>16</span>
+      <mat-form-field><input [(ngModel)]="stock_15_code" matInput placeholder="Código" tabindex="36"></mat-form-field>
+      <mat-form-field><input [(ngModel)]="stock_15_weight" matInput placeholder="Peso" tabindex="37"></mat-form-field>
+    </div>
+  </div>
+
+  <button mat-raised-button color="accent" [disabled]="!fg.valid" (click)="save()" tabindex="38">Salvar</button>
+  <button mat-raised-button color="primary" (click)="backToList()" tabindex="39">Cancelar</button>

@@ -25,17 +25,13 @@ mongoose.connect(config.get('mongodb.host'), config.get('mongodb.options'))
     .then(() => console.log('Connected to MongoDB...'))
     .catch((err) => console.log('Cannot connect to MongoDB: ', err));
 
-// Auth 
-// app.use(expressJwt({secret: config.get('jwtSecretToken')}).unless({path: ['/api/auth', '', '/', '/about']}));
 app.use('/api/auth', require('./routes/auth'));
 
 // API Routes
 app.use('/api/loader', require('./routes/loader'));
 app.use('/api/trades', require('./routes/trades'));
+app.use('/api/wallets', require('./routes/wallets'));
 
-// Public website
-app.use('/', require('./routes/public'));
-
-const server = app.listen(PORT, function () {
+app.listen(PORT, function () {
     console.log('Express listening on port %s', PORT);
 });

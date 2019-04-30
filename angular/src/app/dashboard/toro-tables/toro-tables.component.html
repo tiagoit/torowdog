@@ -1,0 +1,83 @@
+<h4>Análise de recomendações</h4>
+
+<div class="recomendation-tables-container">
+  <div class="recomendations-table">
+    <div class="table-heading">
+      <span>Toro Radar</span>
+      <span>Day Trade</span>
+      <span>Últimos 45 dias</span>
+    </div>
+    <table class="table table-striped table-bordered table-sm">
+      <thead>
+        <tr>
+          <th rowspan="2">code</th>
+          <th colspan="3">BUY</th>
+          <th colspan="3">SELL</th>
+        </tr>
+        <tr>
+          <th>qtt</th>
+          <th>hit</th>
+          <th>gain</th>
+          <th>qtt</th>
+          <th>hit</th>
+          <th>gain</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let trade of orderedDayTradeArray">
+          <td [ngClass]="{'highlighted-stock': dashboardService.isHighlighted(trade.code)}"><a routerLink="" (click)="dashboardService.highlightStock(trade.code)">{{ trade.code }}</a></td>
+          <td>{{ trade.qttBuy }}</td>
+          <td [ngClass]="{'wow': trade.hitBuy*100/trade.qttBuy >= 70, 'poutz': trade.hitBuy*100/trade.qttBuy < 15}">
+            {{ trade.hitBuy }} ({{ trade.hitBuy * 100 / trade.qttBuy | number:'2.0-0' }}%)
+          </td>
+          <td>{{ trade.avgGainBuy | number:'1.2-2'}}%</td>
+          <td>{{ trade.qttSell }}</td>
+          <td [ngClass]="{'wow': trade.hitSell*100/trade.qttSell >= 70, 'poutz': trade.hitSell*100/trade.qttSell < 15}">
+            {{ trade.hitSell }} ({{ trade.hitSell * 100 / trade.qttSell | number:'2.0-0' }}%)
+          </td>
+          <td>{{ trade.avgGainSell | number:'1.2-2'}}%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <div class="recomendations-table">
+    <div class="table-heading">
+      <span>Toro Radar</span>
+      <span>Curto Prazo</span>
+      <span>Últimos 120 dias</span>
+    </div>
+    <table class="table table-striped table-bordered table-sm">
+      <thead>
+        <tr>
+          <th rowspan="2">code</th>
+          <th colspan="3">BUY</th>
+          <th colspan="3">SELL</th>
+        </tr>
+        <tr>
+          <th>qtt</th>
+          <th>hit</th>
+          <th>gain</th>
+          <th>qtt</th>
+          <th>hit</th>
+          <th>gain</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let trade of orderedCurtoPrazoArray">
+          <td [ngClass]="{'highlighted-stock': dashboardService.isHighlighted(trade.code)}"><a routerLink="" (click)="dashboardService.highlightStock(trade.code)">{{ trade.code }}</a></td>
+          <td>{{ trade.qttBuy }}</td>
+          <td [ngClass]="{'wow': trade.hitBuy*100/trade.qttBuy >= 70, 'poutz': trade.hitBuy*100/trade.qttBuy < 15}">
+            {{ trade.hitBuy }} ({{ trade.hitBuy * 100 / trade.qttBuy | number:'2.0-0' }}%)
+          </td>
+          <td>{{ trade.avgGainBuy | number:'1.2-2'}}%</td>
+          <td>{{ trade.qttSell }}</td>
+          <td [ngClass]="{'wow': trade.hitSell*100/trade.qttSell >= 70, 'poutz': trade.hitSell*100/trade.qttSell < 15}">
+            {{ trade.hitSell }} ({{ trade.hitSell * 100 / trade.qttSell | number:'2.0-0' }}%)
+          </td>
+          <td>{{ trade.avgGainSell | number:'1.2-2'}}%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

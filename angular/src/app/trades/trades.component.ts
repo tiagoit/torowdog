@@ -16,7 +16,6 @@ export class TradesComponent implements OnInit {
   ngOnInit() {
     this.service.getByCode(this.route.snapshot.paramMap.get('code')).subscribe((trades: Trade[]) => {
       this.trades = trades;
-      console.log('this.trade: ', this.trades);
     });
 
   }

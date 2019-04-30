@@ -21,7 +21,6 @@ export class LoadComponent {
   upload() {
     this.loaderService.load(this.file).subscribe(event => {
       if(event.type === HttpEventType.Response) {
-        console.log(event.body);
       }
     });
   }

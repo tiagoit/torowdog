@@ -12,7 +12,7 @@ router.post('/', function(req, res) {
     const userFromDB = USERS.find(user => user.name == req.body.username);
     if(!userFromDB || req.body.password != userFromDB.pass) return res.sendStatus(401);
 
-    var token = jwt.sign({userID: userFromDB.id}, config.get('jwtSecretToken'), {expiresIn: '1h'});
+    var token = jwt.sign({userID: userFromDB.id}, config.get('jwtSecretToken'), {expiresIn: '12h'});
     res.send({token});
 });
 

@@ -1,0 +1,47 @@
+.wallets-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.wallet {
+  font-size: 12px;
+  font-family: monospace;
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.table-heading {
+  width: 160px;
+  border: 1px solid rgba(0,0,0,0.2);
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 2px 2px 2px;
+}
+
+tbody tr {
+  line-height: 12px;
+}
+
+.table-heading.active-wallet {
+  background-color: rgba(0,255,0,0.1);
+}
+
+table {
+  width: 160px;
+}
+
+.highlighted-stock {
+  background-color: rgba(0,255,0,0.5);
+}
+
+.summary-tables > .table-heading {
+  width: 220px;
+}
+
+.summary-tables table {
+  width: 33%;
+  display: inline-table;
+}

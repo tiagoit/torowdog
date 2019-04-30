@@ -1,0 +1,85 @@
+<h4>Carteiras</h4>
+<div class="wallets-container">
+
+  <div class="wallet summary-tables">
+    <div class="table-heading">
+      <span>MAIS RECOMENDADAS (COUNT)</span>
+    </div>
+    <table class="table table-sm table-striped table-bordered">
+      <thead>
+        <tr>
+          <th>code</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let s of summaryTable | slice:0:10">
+          <td [ngClass]="{'highlighted-stock': dashboardService.isHighlighted(s.stockCode)}">
+            <a routerLink="" (click)="dashboardService.highlightStock(s.stockCode)">{{ s.stockCode }}</a>
+          </td>
+          <td>{{ s.count }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table table-sm table-striped table-bordered">
+      <thead>
+        <tr>
+          <th>code</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let s of summaryTable | slice:10:20">
+          <td [ngClass]="{'highlighted-stock': dashboardService.isHighlighted(s.stockCode)}">
+            <a routerLink="" (click)="dashboardService.highlightStock(s.stockCode)">{{ s.stockCode }}</a>
+          </td>
+          <td>{{ s.count }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table table-sm table-striped table-bordered">
+      <thead>
+        <tr>
+          <th>code</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let s of summaryTable | slice:20:30">
+          <td [ngClass]="{'highlighted-stock': dashboardService.isHighlighted(s.stockCode)}">
+            <a routerLink="" (click)="dashboardService.highlightStock(s.stockCode)">{{ s.stockCode }}</a>
+          </td>
+          <td>{{ s.count }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+  
+  <div *ngFor="let w of wallets" class="wallet">
+    <div class="table-heading" [ngClass]="{'active-wallet': isWalletActive(w)}">
+      
+      <span>{{w.group}} {{w.type}} {{lastGroup | slice:0:3}}</span>
+      <span>{{w.frequency | slice:0:1}}</span>
+      <span>{{(w.frequency == 'Mensal') ? (w.start | date: 'MMM') : (w.start | date: 'dd/MM')}}</span>
+    </div>
+    <table class="table table-sm table-striped table-bordered">
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Peso</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let s of w.stocks">
+          <td [ngClass]="{'highlighted-stock': dashboardService.isHighlighted(s.code)}">
+            <a routerLink="" (click)="dashboardService.highlightStock(s.code)">{{ s.code }}</a>
+          </td>
+          <td>{{ s.weight }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

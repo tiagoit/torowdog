@@ -2,13 +2,8 @@ const express = require('express');
 const fs = require("fs");
 const IncomingForm = require('formidable').IncomingForm;
 const router = express.Router();
-const config = require('config');
-const sharp = require('sharp');
 const { Trade } = require('../models/trade');
-const { Company, Analysis, CompanyNumbers } = require('../models/company');
-
-const toroOperationTypes = {"DAY": "DT", "SWING": "ST"};
-const toroOrderTypes = {"C": "Buy", "V": "Sell"}
+const { Company } = require('../models/company');
 
 
 // ############   LOAD TRADES HISTORY JSON
@@ -17,9 +12,7 @@ router.post('/', async (req, res) => {
         var form = new IncomingForm();
         let _file;
 
-        form.on('file', (field, file) => {
-            _file = file;
-        });
+        form.on('file', (field, file) => _file = file);
  
         form.on('end', async () => {
             let trades = JSON.parse(fs.readFileSync(_file.path));
@@ -44,8 +37,8 @@ function buildTrade(rawTradeObject) {
     e.created       = rawTradeObject['criado'];
     e.edited        = rawTradeObject['editado'];
     e.code          = rawTradeObject['empresa']['codigo'];
-    e.operationType = toroOperationTypes[rawTradeObject['tipo_operacao']['tipo']];
-    e.orderType     = toroOrderTypes[rawTradeObject['tipo_ordem']];
+    e.operationType = rawTradeObject['tipo_operacao']['tipo'];
+    e.orderType     = rawTradeObject['tipo_ordem'];
     e.price         = rawTradeObject['compra'].replace(',', '.');
     e.priceLimit    = rawTradeObject['compra_maxima'].replace(',', '.');
     e.stopGain      = rawTradeObject['objetivo'].replace(',', '.');
@@ -56,6 +49,7 @@ function buildTrade(rawTradeObject) {
 }
 
 function numberParser(num) {
+    if(!num) return '';
     let num_ = num.replace(/\.,/g, '')
     .replace(/\./g, '')
     .replace(/,/g, '.')
@@ -63,7 +57,6 @@ function numberParser(num) {
 }
 
 async function upsertCompany(rawTradeObject) {
-    // console.log('upsertCompany');
     let storedCompany = await Company.findOne({ toroID: rawTradeObject['empresa']['id'] });
 
     let analysis = {};
