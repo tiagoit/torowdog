@@ -24,6 +24,14 @@ import { AuthGuard } from './auth/auth.guard';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TradesComponent } from './trades/trades.component';
 
+import { ListWalletsComponent } from './wallets/list-wallets/list-wallets.component';
+import { AddWalletComponent } from './wallets/add-wallet/add-wallet.component';
+import { EditWalletComponent } from './wallets/edit-wallet/edit-wallet.component';
+
+import { ToroTablesComponent } from "./dashboard/toro-tables/toro-tables.component";
+import { WalletsListComponent } from './dashboard/wallets-list/wallets-list.component';
+
+
 export function tokenGetter() {
   return localStorage.getItem('access_token');
 }
@@ -36,7 +44,9 @@ export function tokenGetter() {
     DialogConfirm,
     LoginComponent,
     DashboardComponent,
+    ToroTablesComponent,
     TradesComponent,
+    ListWalletsComponent, AddWalletComponent, EditWalletComponent, WalletsListComponent,
   ],
   imports: [
     BrowserModule,

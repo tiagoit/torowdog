@@ -1,0 +1,54 @@
+<div class="mat-elevation-z8">
+  <table mat-table class="full-width-table" [dataSource]="dataSource" matSort matSortActive="start" matSortDirection="asc" aria-label="Elements">
+    <ng-container matColumnDef="start">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Período</th>
+      <td mat-cell *matCellDef="let row">{{row.start | date:  'dd/MM'}} - {{row.end | date:  'dd/MM'}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="group">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Grupo</th>
+      <td mat-cell *matCellDef="let row">{{row.group}} ({{row.frequency | slice:0:1}})</td>
+    </ng-container>
+
+    <ng-container matColumnDef="frequency">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Frequência</th>
+      <td mat-cell *matCellDef="let row">{{row.frequency}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="type">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Tipo</th>
+      <td mat-cell *matCellDef="let row">{{row.type}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="stocks">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Tipo</th>
+      <td mat-cell *matCellDef="let row">{{joinStocks(row.stocks)}}</td>
+    </ng-container>
+
+    <!-- Actions Column -->  
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let row">
+        <button mat-icon-button (click)="edit(row._id)"><mat-icon aria-label="Edit">edit</mat-icon></button>
+        <button mat-icon-button (click)="delete(row._id, row.name)"><mat-icon aria-label="Delete">delete</mat-icon></button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <mat-paginator #paginator
+      [length]="dataSource?.data.length"
+      [pageIndex]="0"
+      [pageSize]="100"
+      [pageSizeOptions]="[25, 50, 100, 250]">
+  </mat-paginator>
+</div>
+
+<div class="fab">
+  <button mat-icon-button (click)="add()">
+    <mat-icon aria-label="Add">add</mat-icon>
+  </button>
+</div>
+

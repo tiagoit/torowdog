@@ -8,6 +8,7 @@
     <mat-nav-list>
       <a mat-list-item routerLink="/" routerLinkActive="active" *ngIf="auth.loggedIn">Dashboard</a>
       <a mat-list-item routerLink="/loader" routerLinkActive="active" *ngIf="auth.loggedIn">Loader</a>
+      <a mat-list-item routerLink="/wallets" routerLinkActive="active" *ngIf="auth.loggedIn">Wallets</a>
       <a mat-list-item (click)="logout()" href="#" *ngIf="auth.loggedIn">Logout</a>
     </mat-nav-list>
   </mat-sidenav>
@@ -18,7 +19,7 @@
       </button>
       <!-- TODO: Add logo -->
       <!-- TODO: Add active component name -->
-      <span>Sul BA Guia - Admin module</span>
+      <span>Market analysis</span>
     </mat-toolbar>
 
     <router-outlet></router-outlet>

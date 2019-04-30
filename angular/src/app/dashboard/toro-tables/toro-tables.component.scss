@@ -1,0 +1,42 @@
+.recomendation-tables-container {
+  display: flex;
+}
+
+.recomendations-table {
+  margin-right: 24px;
+}
+
+.table-heading {
+  width: 400px;
+  border: 1px solid rgba(0,0,0,0.2);
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 8px;
+}
+
+
+table {
+  font-family: monospace;
+  width: 400px;
+}
+
+tbody tr {
+  line-height: 12px;
+}
+
+.wow {
+  background-color: #28a745;
+  color: #FFF;
+  // font-size: 16px;
+}
+
+.poutz {
+  background-color: crimson;
+  color: #FFF;
+  // font-size: 16px;
+}
+
+.highlighted-stock {
+  background-color: rgba(0,255,0,0.5);
+}

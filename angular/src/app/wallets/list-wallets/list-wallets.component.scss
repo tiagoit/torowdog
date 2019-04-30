@@ -1,0 +1,15 @@
+.full-width-table {
+  width: 100%;
+}
+
+div.fab {
+  color: #FFF;
+  position: fixed;
+  right: 36px;
+  top: 12px;
+  z-index: 2;
+}
+
+.mat-row:nth-child(even){
+  background-color:rgba(0,0,0,0.05);;
+}
