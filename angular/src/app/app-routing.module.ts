@@ -15,8 +15,8 @@ import { EditWalletComponent } from './wallets/edit-wallet/edit-wallet.component
 import { WalletService } from "./wallets/wallet.service";
 
 const routes: Routes = [
-  { path: '', component: DashboardComponent},
-  { path: 'trades/:code', component: TradesComponent},
+  { path: '', component: DashboardComponent, canActivate: [AuthGuard] },
+  { path: 'trades/:code', component: TradesComponent, canActivate: [AuthGuard] },
   { path: 'login', component: LoginComponent},
 
   { path: 'wallets', component: ListWalletsComponent, canActivate: [AuthGuard] },

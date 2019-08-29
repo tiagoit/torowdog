@@ -14,3 +14,16 @@
         }
     }
 }
+
+
+db.copyDatabase("torowdog", "torowdogdb","localhost")
+
+
+db.createUser(
+  {
+    user: "admintbcf1212",
+    pwd: "jnsnkjhc67732nnfkud73nns6shn3lis93jns567shb3nlfk8dy73nmkehf87",
+    roles: [ { role: "root", db: "admin" } ]
+  }
+);
+

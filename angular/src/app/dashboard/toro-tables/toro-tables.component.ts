@@ -56,14 +56,16 @@ export class ToroTablesComponent implements OnInit {
 
   buildTable(operationType) {
     let trades_;
-    let table_ = new Object();;
-    let options = {'DAY': {
-      days: 45,
-      hitMinimum: 0.0015
-    }, 'CPR': {
-      days: 120,
-      hitMinimum: 0.0015
-    }};
+    let table_ = new Object();
+    let options = {
+      'DAY': {
+        days: 45,
+        hitMinimum: 0.0015
+      }, 'CPR': {
+        days: 365,
+        hitMinimum: 0.015
+      }
+    };
 
     trades_ = this.filterTrades(operationType, options[operationType].days);
     trades_ = trades_.forEach((trade: Trade) => {
@@ -77,8 +79,6 @@ export class ToroTablesComponent implements OnInit {
       // mininum of 0,15% to hit
       let buyHitMininum = (1 + options[operationType].hitMinimum); // 1.0015; 
       let sellHitMininum = (1 - options[operationType].hitMinimum); // 0.9985;
-
-      console.log(buyHitMininum, sellHitMininum)
 
       // BUY
       if(trade.orderType === 'C') {
