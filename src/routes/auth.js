@@ -5,7 +5,8 @@ const config = require('config');
 
 var USERS = [
     { id: 1, name: 'tiago', pass: 'a4b3c2d1' },
-    { id: 2, name: 'teste', pass: 'teste123' }
+    { id: 2, name: 'teste', pass: 'teste123' },
+    { id: 2, name: 'sergio', pass: 'sergio#123' }
 ];
 
 router.post('/', function(req, res) {

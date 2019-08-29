@@ -31,6 +31,7 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/api/loader', require('./routes/loader'));
 app.use('/api/trades', require('./routes/trades'));
 app.use('/api/wallets', require('./routes/wallets'));
+app.use('/api/tview', require('./routes/tview'));
 
 app.listen(PORT, function () {
     console.log('Express listening on port %s', PORT);

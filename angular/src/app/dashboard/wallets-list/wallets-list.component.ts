@@ -27,7 +27,11 @@ export class WalletsListComponent implements OnInit {
 
   ngOnInit(): void {
     this.service.get().subscribe(wallets => {
-      this.wallets = <Wallet[]>wallets;
+      this.wallets = (<Wallet[]> wallets).filter(w => {
+        let walletMonth = parseInt(moment(w.start).format("MM"));
+        let currentMonth = parseInt(moment().format("MM"));
+        return walletMonth === currentMonth || walletMonth === (currentMonth - 1);
+      });
       this.orderWallets();
       this.buildSummaryTable();
     });
